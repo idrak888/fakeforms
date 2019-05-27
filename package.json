@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "next build",
     "start": "nodemon server.js",
     "heroku-postbuild": "npm run build"
   },
