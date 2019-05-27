@@ -11,7 +11,7 @@ const dev = process.env.NODE_ENV || 'production';
 const nextApp = next({dev});
 const nextHandler = nextApp.getRequestHandler();
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 3100;
 
 io.on('connect', socket => {
     socket.emit('now', {
@@ -43,6 +43,6 @@ nextApp.prepare().then(() => {
     })
     server.listen(port, (err) => {
         if (err) throw err;
-        console.log('Server started on port ' + 3000);
+        console.log('Server started on port ' + port);
     })
 });
