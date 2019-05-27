@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "build": "next dev",
-    "start": "next start -p $PORT",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "nodemon server.js -p $PORT",
     "heroku-postbuild": "npm run build"
   },
   "keywords": [],
