@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #FBFBFB;
+}
+input, button {
+    padding: 6px;
+    width: 400px;
+    border: 1px solid rgb(197, 197, 197);
+    margin-top: 4px;
+    font-size: large;
+    border-radius: 3px;
+    color: rgb(49, 49, 49);
+}
+.btn {
+    background-color: rgb(28, 121, 228);
+    color: white;
+    cursor: pointer;
+    width: 415px;
+    border: 0;
+    margin-top: 6px;
+}
+.Notes .btn {
+    width: 100px;
+    margin-top: 20px;
+}
+.Notes input {
+    width: 300px;
+}
+.Notes form {
+    margin: 20px 0px 0px 30px;
+}
+.Signup {
+    text-align: center;
+}
+h2 {
+    margin-top: 20vh;
+}
+hr {
+    width: 200px;
+    border: 0;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.msg-container {
+    position: absolute;
+}
+.ErrorBox {
+    background-color: rgb(211, 43, 43);
+    color: white;
+    width: 200px;
+    height: auto;
+    padding: 8px;
+    box-shadow: 2px 2px 3px lightgrey;
+    margin-top: 4px;
+    animation: slideRight 0.5s ease-in;
+}
+.success {
+    position: absolute;
+    left: 50%;
+    display: none;
+}
+.MsgBox {
+    position: relative;
+    width: 400px;
+    border-radius: 3px;
+    height: auto;
+    padding: 50px;
+    background-color: white;
+    margin-top: 6vh;
+    left: -50%;
+    filter: drop-shadow(0 0 0.5rem rgb(80, 80, 80));
+    animation: slideRight 0.6s ease-in-out;
+}
+.MsgBox a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(28, 121, 228);
+}
+.Note {
+    border-radius: 3px;
+    background-color: white;
+    filter: drop-shadow(0 0 0.4rem rgb(151, 151, 151));
+    display: block;
+    width: 250px;
+    height: 150px;
+}
+.mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+  
+.mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+.Note hr{
+    width: 100%;
+}
+.Note textarea {
+    border: 0;
+    resize: none;
+    height: 100px;
+    margin-top: 2px;
+    width: 90%;
+    z-index: 12;
+}
+@keyframes slideRight {
+    from {margin-left: -20px;}
+    to {margin-left: 2px;}
+}
